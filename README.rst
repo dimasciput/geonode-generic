@@ -64,12 +64,11 @@ you change don't trigger other settings.
 
 To ilustrate the whole concept of chained settings:
 
-```
     +------------------------+-------------+-------------------------------+-------------+----------------------------------+
     |  GeoNode configuration |             |   Your application default    |             |  (optionally) Your deployment(s) |
     |                        |             |        configuration          |             |                                  |
-    +========================|=============|===============================|=============|==================================+
+    +========================+=============+===============================+=============+==================================+
     |                        | included by |                               | included by |                                  |
-    |   geonode.settings     |     ->      |  geonode_generic.settings    |      ->     |  geonode_generic.local_settings |
-    +------------------------|-------------|-------------------------------|-------------|----------------------------------+
-```
+    |   geonode.settings     |     ->      |  geonode_generic.settings     |      ->     |  geonode_generic.local_settings  |
+    +------------------------+-------------+-------------------------------+-------------+----------------------------------+
+
